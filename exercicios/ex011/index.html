@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+        <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+      <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+      <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+      <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+         <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <!--audio src="midia/happy-mistake.mp3" controls autoplay>Para ter compatibilidade com todos os navegadores voçê pode usar outros foramatos de arquivos MP3/WAV/OGG-->
+        <p>Outra maneira de inserir áudio</p>
+    <audio preload="metadata" autoplay controls loop> <!--O AUTO faz o download automatico,ele só vai considerar que o site terminou de carregar,depois que carregar todo o áudio tbm(isso é ruim).O METADATA vai carregar só onom do arquivo e algumas informações(tipo data,duraçao).E NONE vai carregar somente qdo o usuario apertar play nos controles-->
+           <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+           <source src="midia/guanabara-33.ogg" type="audio/ogg">
+           <source src="midia/guanabara-33.wav" type="audio/wav"><!--Tentar evitar por mais que seja compativel o arquivo WAV,pois eles são muito grandes e pesados,e isso vai pesar no seu site-->
+           <!--A ordem é muito importante,pois ele vai tentando carregar o áudio de cima para baixo-->
+           <p>Infelizmente seu navegador não consegue reproduzir áudio.<a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>     
+</body>
+</html>

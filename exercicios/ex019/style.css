@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+   /*Em HTML é ID   =em CSS é #(cerquilha). Id é unico.
+     Em HTML É CLASS= em CSS é .(ponto). Class pode ser multiplos*/
+
+    body {
+    background-color: #4fd69991;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    h1 {
+    color: #2A7050;
+}
+
+    h1#principal {
+    text-align: center;
+    background-color: #2A7050;
+    color: white;
+}
+
+    h2 {
+    color: #097e49;
+}
+
+    .basico {
+        color: #1e4936;
+        font-weight: bold;
+}
+
+    .intermediario {
+        color: #9ca70b;
+ }
+
+    .avancado { 
+        color: #d40e0e;
+        
+}
+
+    .destaque{
+        background-color: #ecfc0fb0;
+}
