@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+body{
+    background-color: black;
+    color: white;
+    font-family: 13 pt Arial;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+p.meio {
+    text-align: center;
+}
