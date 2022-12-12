@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "UTF-8"; /*regra,serve para compatibilidade com acentuação,como o css é externo eu posso criar essa regra,dizendo que ele tbm é compativo com o 'UTF-8'*/
 
 body{
     background-color: lightgoldenrodyellow;
