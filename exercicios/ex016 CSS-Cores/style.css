@@ -5,22 +5,21 @@
 }
 
 body {
-    background-image: linear-gradient(to right, #05A696, #F1E9A8);
-    text-align: justify;
+    background-image: linear-gradient(to right, #05A696, #F1E9A8); /*Para fazer um degrade no fundo da página*/
 }
-main {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(5, 166, 150, 0.527);
-    width: 600px;
-    padding: 10px;
-    margin: auto
 
+main {
+    background-color: white; /*Cor de fundo*/
+    border-radius: 10px; /*Para arrumar(arredondar) as pontinhas das bordas*/
+    box-shadow: 5px 5px 15px rgba(5, 166, 150, 0.527); /*Para criar sombras,o 1° valor é o qto essa sombra vai andar para o lado,2° é o qto ela vai andar para baixo,3° é o qto ela vai espalhar,e o ultimo parametro é o qto essa sombra vai ter de transparencia*/
+    width: 600px; /*Para ajustar a largura do conteúdo*/
+    padding: 10px; /*Cria uma borda entre o conteúdo e a margem,para não ficarem colados */
+    margin: auto; /*Centraliza o conteúdo,independente do tamanho da da tela,ele sempre vai ficar no meio*/
 }
 
 h1 {
-    color: #D9525E;
-    text-align: center;
+    color: #D9525E; /*Cor da letra*/
+    text-align: center; /*Centralizar o texto*/
     text-shadow: 1px 1px 2px  #92353d8a;
 }
 
@@ -29,5 +28,5 @@ h2 {
 }
 
 p {
-    text-align: justify;
+    text-align: justify; /*Deixar o texto alinhado,os parágrafos*/
 }
