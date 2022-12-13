@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonte em CSS</title>
+    <style> 
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+             /*(serif=serifada/sans-serif=não serifidas) As fontes com serifas facilitam a leitura,a recomendação é que use em textos muito longos para impressão em tela de referencia a fontes não serifadas,papel é recomendado serifada*/
+
+            /*Nem sempre o dispositivo vai ter a fonte escolhida,então se ela não tiver a 1°,ela vai tentar achar a 2°,caso tbm não tenha,ela vai para a 3° que é serif/sans-serif e ai o dispositivo vai procurar qualquer fontes que seja ou não serifada(depende como está no comando).Isso se chama safe combinations=conbinação segura,se vç quiser saber quais são as safe combinations,use esse site=CSS Web Safe Fonts-W3 schools*/
+
+            /* modulo 2-cap 14-aula 4
+            Medidas Absolutas
+cm, mm, in(polegada), px(pixel), pt(ponto), pc(paica).Não se recomenda ultilizar pt/pc em material que vai ser exibido em telas) 
+
+            Medidas Relativas
+em(medida relativa ao tamanho atual da fonte,altura do m maiusculo,), 
+ex(relativa altura x,ltura do x minusculo), rem(tipo o em,mas é relativo ao rut,a fonte que está configuradas no body), 
+vw (largura da viewport,tamanho da sua tela), 
+vh(altura da viewport), 
+%
+          
+            A w3c para a medida de font size recomeda usar as medidas px ou em
+            
+            (Usar o px ou em)
+            16px geralmente= 1em
+            */
+            /*16px geralmente é o tamanho normal da fonte dos navegadores*/
+            font-size: 1em; /*O tamanho vai ser baseado no corpo da fonte=espaço entre seu ponto mais alto e mais baixo*/
+            font-weight: ; /*peso da fonte*/ /*valores de dentro da tag' font-weight'= lighter,normal,bold,bolder.Ou númericas do 100 ao 900(colocar de 100 em 100)*/
+/*peso é qdo a gente faz a fonte ficar mais magra  ou gorda(estreita,larga),para eu ver o peso da fonte não da p usar as fontes simples,elas só tem um peso.Para eu usar o peso da fonte eu tenho que usar uma fonte que se chama 'Work Sans',essa fonte não está no computador de nimguem,e p ultilizar essa fonte eu tenho que colocar uma linha lá em cima com uma url*/
+font-style: normal; /*para deixar negrito,italico ou normal*/
+text-decoration: underline; /*para sublinhar o texto*/
+/*A SUA FAMILIA DE FONTES TEM QUE POSSIBILITAR TODAS ESSAS 3 CONFIGURAÇÕES,A MAIORIA DAS FONTES NÃO PERMITE ESSAS ALTERAÇÕES:font-weight,font-style,text-decoration*/
+        }
+        h1{
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            /*shorthand=é para simplificar as linhas de cima,a ordem é: font-style, font-weight, font-size,font-family.Então eu coloco a tag 'font',e na ordem eu vou colocando os valores.EX: font:italic bolder 3em 'Work Sans ,sans serif.Em vez de usar 4 linhas como ai em cima,eu digo as msms coisas em 1 linha*/
+        }
+        
+       
+    </style>
+</head>
+<body >
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat doloremque praesentium reiciendis cum quidem aspernatur delectus fugit est consequuntur, ut ipsum placeat earum facilis asperiores deserunt dolorem ducimus, ipsam exercitationem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem nemo quibusdam velit eos enim laborum officia at, culpa debitis quisquam quia earum accusamus omnis. Quidem impedit illo reprehenderit unde at.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat minima aspernatur ipsa ullam deserunt aut, ipsum, nemo, blanditiis recusandae reprehenderit eius! Eligendi aut odio enim ipsum excepturi minima totam tenetur? Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, libero pariatur rem a quod provident iusto perferendis, earum incidunt nemo cupiditate ipsam doloribus totam voluptatem natus omnis consequatur labore quas?</p>
+
+</body>
+</html>
