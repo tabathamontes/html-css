@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 { /*box-level,por padrão ele já é box-level,mas posso mudar ele colocando display:inline,isso vale para os outros tbm*/
+            background-color: rgb(167, 165, 165);
+            height: 300px;
+            width: 300px;
+
+            border-width: 10px; /*largura da borda,espessura traço em volta*/
+            border-style: solid; /*alguns valores de border-style: solid (traço reto), dashed(borda pontilhada com traços), dotted (borda pontilhada em bolinhas), double(linha dupla),groove(fica meio 3d)*/
+            border-color: darkslategray;
+            /*shorthand  border:espessura,estilo,cor  EX= border: 10px solid darkslategray;*/
+
+            padding-top: 10px; /*padding é a distancia entre o conteudo e a borda,borda para dentro*/
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            /*shorthand padding: cima(top),direita(rigth),baixo(bottom),esquerda(left).E se o valor das 4 forem iguais basta colocar um valor que vale para todas EX= padding: 10px 10px 10px 10px */  
+            
+            margin-top: 20px; /*margim é a distancia da borda para fora*/
+            margin-right: auto;
+            margin-bottom: 40px;
+            margin-left: auto;
+            /*shorthand margin: cima(top),direita(rigth),baixo(bottom),esquerda(left).E se o valor das 4 forem iguais basta colocar um valor que vale para todas.Se eu quiser centralizar a margem da direita e esqueda é so colocar auto EX= margin: 20px auto 20px auto*/
+/*para eu deixar o elemento no meio da tela eu uso somente margin:auto,se for uma caixa,se for um texto é so colocar text-align:center*/
+
+            outline-width: 5px; /*outline é o contorno por fora da borda dentro da margem*/
+            outline-style: dashed;
+            outline-color: salmon;
+        /*shorthand outline: largura(width), estilo(style), cor(color)  EX= outline: 5px dashed salmon;*/
+        }
+
+        
+        a { /*inline-level*/
+            border-width: 3px;
+            border-style: solid;
+            border-color: red;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Páragrafos também são exemplos de box- level,mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tuo isso funciona. </p> <!--Como eu não coloquei nenhum endereço de link no a href,eu coloco a #,só para manter o link valido,mas ele não vai me levar a lugar nenhum,pois está sem endereço -->
+</body>
+</html>
+
+<!--box level é uma caixa que pega de fora a fora da linha
+inline-level é uma caixa que se forma no meio do conteudo-->
+
+<!--display:block      significa box-level 
+display:inline         significa inline-level     -->
+
+<!--Os tracinhos que aparece dentro do Dev tools(ferramentas do desenvolvedor),aquele quadrado colorido que mostra margem,borda,padding,significa que não tem formatação naquele lugar.-->
+
+<!--Qdo aparece folha de estilo do user agent ou user agent stylesheet
+Dev tools(ferramentas do desenvolvedor) é pq foi configurado automaticamente pelo navegador -->
