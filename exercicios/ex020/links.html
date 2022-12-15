@@ -19,21 +19,22 @@
 
         a {
             color: red;
-            text-decoration: none;
-            font-weight: bold;
+            text-decoration: none; /*para tirar o sublinhado dos links*/
+            font-weight: bold; /*bold=para ficar em negrito*/
         }
 /*PSEUDO-CLASSES são palavras que definem estados de elementos dentro do HTML
 Pseudo-classes:1 vez :(dois pontos)
+Pseudo-elemento pode agir nas classe,nos elementos,nos id,ele mexe no conteudo.
 Pseudo-elementos:2 vezes :(dois pontos)*/
-        a:visited {
+        a:visited  /*visitados*/ {
             color: darkred;
         }
 
         a:hover {
-            color: black;
-            text-decoration: underline;
+            color: black; /*para qdo eu passar o mouse em cima ele fica preto*/
+            text-decoration: underline; /*para qdo eu passar o mouse em cima sublinhar*/
         }
-        a:active {
+        a:active /*qdo ele fica ativo,qdo eu clicar nesse link ele vai ficar com essa configurações*/ {
             color: yellow;
         }
 

@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pseudo-classes</title>
     <style>
-        div {
-            display: inline-block;
+        div /*a div é um espaço qualquer,que vai do começo da linha ate o final,mas configurando vç coloca a altura e largura que preferir*/ {
+            display: inline-block; /*para ficar na msm linha*/
             background-color: lightgrey;
-            border: 1px solid black;
-            height: 200px;
-            width: 200px;
+            border: 1px solid black; /*border é a borda,aqui está em shorthand(forma abreviada),em ordem:largura,tipo,cor*/
+            height: 200px; /*altura*/
+            width: 200px;  /*largura*/
         }
 
-div:hover {
+div:hover /*hover=quando passar o mousse por cima*/ {
     background-color: yellow;
 }
     </style>
@@ -25,3 +25,4 @@ div:hover {
     <div id="d3">03</div>
 </body>
 </html>
+<!--As pseudoclasses tem que estarem relacionadas a um elemento ou a uma classe,pseudoclasses são relacionadas ao estado de um determidado elemento-->
