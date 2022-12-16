@@ -75,7 +75,7 @@ nav > a {
     border-radius: 5px;
     text-decoration: 10px;
     font-weight: bold;
-    transition-duration: .5s;
+    transition-duration: .5s; /*para qdo mexer o mouse em cima, demorar esse tempo de transição*/
 }
 
 nav > a:hover{
@@ -84,8 +84,8 @@ nav > a:hover{
 }
 
 main {
-    min-width: 300px;
-    max-width: 1000px;
+    min-width: 300px; /*qdo ele tiver 300px ele adpta o conteúdo*/
+    max-width: 1000px; /*qdo ele tiver mais de 1000px ele para de crescer*/
     margin: auto;
     margin-bottom: 30px;
     padding: 20px;
