@@ -13,7 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
-            position: relative;
+            position: relative; /*visualmente não muda nada,é só uma configuração comportamental na tabela*/
 
         }
 
@@ -32,13 +32,17 @@
             color: white;
         }
 
-        thead >tr >th {
+        thead >tr >th { /*para eu deixar o th colado na tela,e qdo eu rolar a a tabela o th não sumir.Mas esse efeito não está funcionando em todos os navegadores  */
             position: sticky;
             top: -1px;
             background-color: rgb(73, 70, 70);
         }
 
-        tbody >tr:nth-child(2n) {   /*efeito zebrado,cor sim,cor não*/
+        tbody >tr:nth-child(2n) {   /*efeito zebrado,cor sim,cor não,(2n)pula uma lina colore outra.Mas pode se fazer assimtbm:
+            tbody >tr:nth-child(odd) colorir os impares 
+             tbody >tr:nth-child(even) colorir os pares
+             Se o fundo é branco não precisa configurar o background-color de white.
+            */
             background-color: lightgrey;
         }
 
@@ -52,18 +56,20 @@
     <!--ANATOMEIA DE TABELAS GRANDES
         TABLE
             CAPTION(LEGENDA)
-            THEAD
+            THEAD(cabeça da tabela)
                 TR, TD,TH
-            TBODY
+            TBODY(corpo da tabela)
                 TR, TD,TH
-            TFOOD
+            TFOOD(rodapé da tabela) 
                 TR, TD,TH
+
+                Usa a tag th para o titulo de um td (dado) 
     -->
     <table>
         <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th scope="col">Estado</th>
+                <th scope="col">Estado</th> <!--Qdo é um titulo de coluna se coloca scope="col"(visualmente não causa alterações,mas para que os mecanismos de buscas consigam analisar os dados de forma coerente,para fazer sentido)-->
                 <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
@@ -182,7 +188,7 @@
 
         <tfoot>
             <tr>
-                <th scope="row">Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th> <!--Qdo é um titulo de linha se coloca scope="row"(visualmente não causa alterações,mas para que os mecanismos de buscas consigam analisar os dados de forma coerente,para fazer sentido)-->
                 <td class="num"><strong>213.317.639</strong></td>
             </tr>
         </tfoot>
