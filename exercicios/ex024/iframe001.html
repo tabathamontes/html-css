@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframe</title> <!--iframe=tradução literal=quadro em linha. Tmanho padrão 300x150-->
+    <style>
+        iframe {/*As configurações do css são soberanas as configurações inline(linha)*/
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de um iframe</h1> <!--Um iframe é um quadro-->
+    <p>
+        Acessando o site do 
+        
+       <iframe src="https://www.cursoemvideo.com" frameborder="0" height="500" scolling="auto"> <!---frameborder=borda do quadro,ele tem duas opcões 0 ou qualquer outro número,o 0(zero,tira a borda), qualquqer outro número coloca a borda de 1px,para personalizar a borda,faça no CSS.
+        scolling é para configurar as barra de rolagem do iframe,ele tem essas opções: auto(se o conteúdo exceder o tamanho do frame,ele vai criar a barra de rolagem), yes(msm que o conteúdo estuver cabendo no iframe vai aparecer a barra de rolagem), no(msm que o conteúdo seja maior,ele não cria a barra de rolagem.MAS EM ALGUNS NAVEGADORES ESSE COMANDO NÃO ESTÁ FUNCIONANDO)-->
+        <a href="https://www.cursoemvideo.com" target="_blank">Curso em Vídeo</a> <!--Nem todos os navegadores de celulares tem suportes ao iframe,então é bom colocar links caso o dispositivo não tenha compatibilidade,se o iframe  não funcionar o link aparece-->
+        </iframe> 
+   
+        para aprender a programar.
+    </p>
+    <p>
+        O site do <iframe src="https://www.google.com.br" frameborder="0"></iframe> também é muito legal,pena que não funciona dentro do iframe! <!--O site do google não abriu,isso pq existe alguns sites que tem uma proteção para que o seu conteúdo não seja exibido dentro de inframes,por sites de terceiros,isso é uma proteção-->
+    </p>
+    <p>
+        O repositório do Guanabara 
+        <iframe src="https://gustavoguanabara.github.io" frameborder="0" height="500" width="500"> 
+        no<a href="https://gustavoguanabara.github.io" target="_blank"> GitHub</a> 
+        </iframe> também é bem legal!
+    </p>
+</body>
+</html>
