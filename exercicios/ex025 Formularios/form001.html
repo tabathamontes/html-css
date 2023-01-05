@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" autocomplete="off"> <!--
+        action="cadastro.php" é para aonde os dados vão ser cadastrados.
+        autocomplete="off" para tirar o preenchimento automatico que aparece,de antigas coisas que foram escritas-->
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome">
+        </p> 
+            <!--<input type="text" serve para criar a caixinha que vai ser preenchido os dados-->
+
+        <p><label for="isobrenome">Sobrenome:</label> <!--label for="isobrenome" para fazer a ligação entre o nome e sobrenome(ou qualquer outro descrição) com a caixa de preenchimento, o for eu coloco com o valor que está em name ou id ,noo caso foi colocado o valor que está em id-->
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+
+        <p><input type="submit" value="Enviar"></p> <!--input type="submit" para criar o botão de enviar,e o value é para colocar algo escrito dentro do botão-->
+    </form>
+</body>
+</html>
