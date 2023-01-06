@@ -13,11 +13,11 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form action="cadastro.php" autocomplete="off"> <!--
+    <form action="cadastro.php" method="post" autocomplete="off"> <!--
         action="cadastro.php" é para aonde os dados vão ser cadastrados.
         autocomplete="off" para tirar o preenchimento automatico que aparece,de antigas coisas que foram escritas-->
         <p><label for="inome">Nome:</label> 
-            <input type="text" name="nome" id="inome">
+            <input type="text" name="nome" id="inome"> <!--o nome é importante para html e php.E o id é importante para fazer a relação com label e tbm com o javascript-->
         </p> 
             <!--<input type="text" serve para criar a caixinha que vai ser preenchido os dados-->
 
