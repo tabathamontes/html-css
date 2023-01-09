@@ -19,7 +19,13 @@ Grantes telas: acima de 1200px*/
     }
 
     main {
+        width: 90%;
         border: 2px solid black;
+    }
+
+    main::after {
+        content: 'Essa impressão foi feita através do site ...';
+        text-decoration: overline;
     }
 
     main h1 {
